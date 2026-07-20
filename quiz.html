@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - The Evolution of HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-container">
+        <header id="main-header"><h1><a href="index.html">The Evolution of HTTP</a></h1>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+        </header>
+        <nav class="nav-menu">
+            <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="early-web.html">Early History</a>
+            <a href="modern-web.html">Modern Evolution</a>
+            <a href="concepts.html">Key Concepts</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="references.html">References</a>
+            <a href="about.html">About</a>
+        </div>
+        </nav>
+        <main class="main-content">
+            <h2>Self-Assessment Quiz</h2>
+            <p>Test what you learned about the evolution of HTTP. Answer all 5 questions, then click Submit to see your results.</p>
+
+            <!-- The quiz form holds every question. We stop it from doing a normal
+                 page reload on submit so we can grade it with JavaScript instead. -->
+            <!-- Milestone 3 update: added "required" to the text input and one radio
+                 per multiple-choice group so the browser
+                 blocks submission until every question has an answer. -->
+            <form id="quiz-form" class="quiz-form">
+
+                <!-- Question 1: Fill in the blank -->
+                <div class="question" id="q1-block">
+                    <p class="question-text">1. The HTTP method used to request a resource without sending data is called ______.</p>
+                    <input type="text" id="q1" name="q1" placeholder="Type your answer" required>
+                    <p class="feedback" id="q1-feedback"></p>
+                </div>
+
+                <!-- Question 2: Multiple choice, one correct answer (radio buttons) -->
+                <div class="question" id="q2-block">
+                    <p class="question-text">2. Which HTTP version first introduced persistent connections with the keep-alive header?</p>
+                    <label><input type="radio" name="q2" value="0.9" required> HTTP/0.9</label>
+                    <label><input type="radio" name="q2" value="1.0"> HTTP/1.0</label>
+                    <label><input type="radio" name="q2" value="1.1"> HTTP/1.1</label>
+                    <label><input type="radio" name="q2" value="2"> HTTP/2</label>
+                    <p class="feedback" id="q2-feedback"></p>
+                </div>
+
+                <!-- Question 3: Multiple choice, one correct answer -->
+                <div class="question" id="q3-block">
+                    <p class="question-text">3. Which transport protocol does HTTP/3 use instead of TCP?</p>
+                    <label><input type="radio" name="q3" value="UDP" required> UDP</label>
+                    <label><input type="radio" name="q3" value="TCP"> TCP</label>
+                    <label><input type="radio" name="q3" value="FTP"> FTP</label>
+                    <label><input type="radio" name="q3" value="SMTP"> SMTP</label>
+                    <p class="feedback" id="q3-feedback"></p>
+                </div>
+
+                <!-- Question 4: Multiple choice, one correct answer -->
+                <div class="question" id="q4-block">
+                    <p class="question-text">4. What year did Tim Berners-Lee create the original HTTP protocol?</p>
+                    <label><input type="radio" name="q4" value="1989" required> 1989</label>
+                    <label><input type="radio" name="q4" value="1991"> 1991</label>
+                    <label><input type="radio" name="q4" value="1996"> 1996</label>
+                    <label><input type="radio" name="q4" value="2000"> 2000</label>
+                    <p class="feedback" id="q4-feedback"></p>
+                </div>
+
+                <!-- Question 5: Multi-select, more than one correct answer (checkboxes) -->
+                <div class="question" id="q5-block">
+                    <p class="question-text">5. Which of the following were introduced by HTTP/2? (select all that apply)</p>
+                    <label><input type="checkbox" name="q5" value="multiplexing"> Stream multiplexing</label>
+                    <label><input type="checkbox" name="q5" value="compression"> Header compression</label>
+                    <label><input type="checkbox" name="q5" value="push"> Server push</label>
+                    <label><input type="checkbox" name="q5" value="auth"> Basic authentication</label>
+                    <p class="feedback" id="q5-feedback"></p>
+                </div>
+
+                <div class="quiz-buttons">
+                    <button type="submit" id="submit-btn">Submit Quiz</button>
+                    <button type="button" id="reset-btn">Retake Quiz</button>
+                </div>
+            </form>
+
+            <!-- Results summary box, filled in by JavaScript after submit -->
+            <div id="results-box" class="results-box"></div>
+
+        </main>
+        <footer class="footer-section">
+            <p>Class project: <a href="https://ksuweb.github.io/IT3203/" style="color:white;">IT 3203 Course Website</a></p>
+        </footer>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

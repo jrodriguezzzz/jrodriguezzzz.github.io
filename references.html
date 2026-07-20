@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References - The Evolution of HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-container">
+        <header id="main-header"><h1><a href="index.html">The Evolution of HTTP</a></h1>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+        </header>
+        <nav class="nav-menu">
+            <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="early-web.html">Early History</a>
+            <a href="modern-web.html">Modern Evolution</a>
+            <a href="concepts.html">Key Concepts</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="references.html">References</a>
+            <a href="about.html">About</a>
+        </div>
+        </nav>
+        <main class="main-content">
+            <h2>References</h2>
+            <!-- List of sources used for this project with links to original documents -->
+            <!-- Milestone 3 update: expanded to 7 references and added a comment under each,
+                 explaining what it covers and why it's relevant to this project -->
+            <ul>
+                <li>Berners-Lee, T. (1991). <a href="https://www.w3.org/Protocols/HTTP/AsImplemented.html">The Original HTTP as Implemented</a>. W3C.
+                    <br><em>Comment:</em> Explains the original, rudimentary design of HTTP/0.9 and its core GET method.</li>
+                <li>Fielding, R., et al. (1996). <a href="https://www.rfc-editor.org/rfc/rfc1945">RFC 1945: HTTP/1.0</a>. IETF.
+                    <br><em>Comment:</em> This document provides the formalization of HTTP/1.0, codifying the use of HTTP headers and status codes.</li>
+                <li>Fielding, R., et al. (1999). <a href="https://www.rfc-editor.org/rfc/rfc2616">RFC 2616: HTTP/1.1</a>. IETF.
+                    <br><em>Comment:</em> Details the introduction of persistent connections (keep-alive) to solve early TCP latency issues.</li>
+                <li>Thomson, M., et al. (2022). <a href="https://www.rfc-editor.org/rfc/rfc9113">RFC 9113: HTTP/2</a>. IETF.
+                    <br><em>Comment:</em> Details the technical specifications of HTTP/2, outlining the fundamental shift to a binary framing layer and multiplexing.</li>
+                <li>Bishop, M. (2022). <a href="https://www.rfc-editor.org/rfc/rfc9114">RFC 9114: HTTP/3</a>. IETF.
+                    <br><em>Comment:</em> Outlines the most recent iteration of HTTP, detailing the shift to QUIC over UDP.</li>
+                <li>Iyengar, J., & Thomson, M. (2021). <a href="https://www.rfc-editor.org/rfc/rfc9000.html">RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport</a>. IETF.
+                    <br><em>Comment:</em> Defines the core QUIC transport protocol that replaces TCP in HTTP/3, enabling faster connection establishment.</li>
+                <li>Grigorik, I. (2013). <a href="https://hpbn.co/">High Performance Browser Networking</a>. O'Reilly Media.
+                    <br><em>Comment:</em> Provides an in-depth look at how web performance is impacted by underlying network protocols like TCP and HTTP.</li>
+            </ul>
+
+            <!-- Extra learning resources -->
+            <h2>Learning Resources</h2>
+            <ul>
+                <li>Cloudflare. (n.d.). <a href="https://www.cloudflare.com/learning/performance/what-is-http3/">What is HTTP/3?</a> Cloudflare Learning Center.
+                    <br><em>Comment:</em> A modern breakdown of how HTTP/3 works in the real world and why CDNs are adopting it.</li>
+                <li>Mozilla. (n.d.). <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">MDN Web Docs: HTTP</a>.
+                    <br><em>Comment:</em> A comprehensive, developer-focused resource explaining HTTP concepts, headers, and methods.</li>
+                <li>http.dev. (n.d.). <a href="https://http.dev/">http.dev - HTTP explained</a>.
+                    <br><em>Comment:</em> Offers accessible explanations of HTTP requests, responses, and connection states for beginners.</li>
+            </ul>
+        </main>
+        <footer class="footer-section">
+            <p>Class project: <a href="https://ksuweb.github.io/IT3203/" style="color:white;">IT 3203 Course Website</a></p>
+        </footer>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

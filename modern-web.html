@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Evolution - The Evolution of HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-container">
+        <header id="main-header"><h1><a href="index.html">The Evolution of HTTP</a></h1>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+        </header>
+        <nav class="nav-menu">
+            <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="early-web.html">Early History</a>
+            <a href="modern-web.html">Modern Evolution</a>
+            <a href="concepts.html">Key Concepts</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="references.html">References</a>
+            <a href="about.html">About</a>
+        </div>
+        </nav>
+        <main class="main-content">
+            <h2>Modern Web Evolution</h2>
+
+            <!-- Milestone 3 update: added subheadings to break up the four paragraphs into two clear sections -->
+            <h3>The Rise of HTTP/2</h3>
+            <!-- Section 1: why HTTP/1.1 stopped being enough -->
+            <p>As the web grew increasingly visual and interactive, the limitations of HTTP/1.1 became a significant roadblock. Modern websites require dozens, sometimes hundreds, of simultaneous requests for small assets like images, CSS, and JavaScript files. Because HTTP/1.1 could only process one request at a time per TCP connection, it suffered heavily from "Head-of-Line blocking." In this scenario, a single delayed asset would stall the delivery of everything queued up behind it, making pages feel sluggish as they loaded piece by piece.</p>
+
+            <!-- Section 2: HTTP/2 solves issue from 1.1 -->
+            <p>By the 2010s, this Head-of-Line blocking in HTTP/1.1 became a severe bottleneck. HTTP/2, ratified in 2015, introduced a binary framing layer and full stream multiplexing, allowing multiple requests to be interleaved over a single TCP connection.</p>
+
+            <h3>The Shift to HTTP/3</h3>
+            <!-- Section 3: HTTP/3 switches from TCP to QUIC/UDP -->
+            <p>HTTP/3 represents the most recent radical transformation, abandoning TCP entirely for a protocol called QUIC, which runs over the connectionless User Datagram Protocol (UDP). This eliminates transport-level Head-of-Line blocking and enables features like Zero Round Trip Time (0-RTT) connection establishment and seamless connection migration for mobile users.</p>
+
+            <!-- Section 4: real-world adoption -->
+            <p>Today, the real-world adoption of these modern protocols is staggering. Over a third of all global web traffic now utilizes HTTP/3, while HTTP/2 handles the vast majority of the rest. Major tech companies, modern browsers, and Content Delivery Networks (CDNs) have aggressively rolled out support for these protocols, making them the new standard for reducing latency and improving user experiences across both desktop and mobile platforms.</p>
+        </main>
+        <footer class="footer-section">
+            <p>Class project: <a href="https://ksuweb.github.io/IT3203/" style="color:white;">IT 3203 Course Website</a></p>
+        </footer>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

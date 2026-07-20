@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Concepts - The Evolution of HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-container">
+        <header id="main-header"><h1><a href="index.html">The Evolution of HTTP</a></h1>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+        </header>
+        <nav class="nav-menu">
+            <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="early-web.html">Early History</a>
+            <a href="modern-web.html">Modern Evolution</a>
+            <a href="concepts.html">Key Concepts</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="references.html">References</a>
+            <a href="about.html">About</a>
+        </div>
+        </nav>
+        <main class="main-content">
+            <h2>Key Concepts</h2>
+            <!-- Table of key terms and short definitions related to HTTP -->
+            <!-- Milestone 2 update: expanded from 5 to 7 terms with fuller explanations -->
+            <table>
+                <tr><th>Concept</th><th>Definition</th></tr>
+                <tr><td>HTTP</td><td>The foundational protocol used by the World Wide Web to dictate how messages are formatted and transmitted. Understanding HTTP is essential because it governs every interaction between a web browser and a server when fetching web pages.</td></tr>
+                <tr><td>TCP</td><td>A foundational networking standard that ensures data is delivered reliably and in the correct order between devices. For decades, HTTP relied entirely on TCP to guarantee that web content didn't get lost in transit, though its strict error-checking can sometimes cause delays.</td></tr>
+                <tr><td>UDP</td><td>A faster, connectionless communication protocol that sends data without guaranteeing its delivery or order. HTTP/3 harnesses UDP (via QUIC) to drastically speed up web traffic and eliminate the bottlenecks historically caused by TCP's strict reliability checks.</td></tr>
+                <tr><td>Latency</td><td>The delay in communication over a network, measuring the time it takes for a data packet to travel from its source to its destination. Reducing latency has been the driving force behind every major HTTP upgrade, as lower latency means websites load significantly faster for users.</td></tr>
+                <tr><td>Multiplexing</td><td>The process of sending multiple data streams over a single communications channel simultaneously. In HTTP/2, multiplexing revolutionized web performance by allowing a browser to download multiple images, scripts, and stylesheets at exactly the same time over one connection.</td></tr>
+                <tr><td>TLS/SSL</td><td>Cryptographic protocols designed to provide secure, encrypted communication over a computer network. Modern web iterations like HTTP/2 and HTTP/3 actually mandate the use of TLS (specifically under HTTPS) to ensure that user data remains private and protected from tampering.</td></tr>
+                <tr><td>Head-of-Line Blocking</td><td>A performance issue where a line of data packets is held up by the first packet experiencing a delay. Solving this specific bottleneck, first at the application layer in HTTP/2 and then at the transport layer in HTTP/3, has been the central challenge of the modern web evolution.</td></tr>
+            </table>
+        </main>
+        <footer class="footer-section">
+            <p>Class project: <a href="https://ksuweb.github.io/IT3203/" style="color:white;">IT 3203 Course Website</a></p>
+        </footer>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

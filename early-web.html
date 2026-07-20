@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Web History - The Evolution of HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-container">
+        <header id="main-header"><h1><a href="index.html">The Evolution of HTTP</a></h1>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+        </header>
+        <nav class="nav-menu">
+            <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="early-web.html">Early History</a>
+            <a href="modern-web.html">Modern Evolution</a>
+            <a href="concepts.html">Key Concepts</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="references.html">References</a>
+            <a href="about.html">About</a>
+        </div>
+        </nav>
+        <main class="main-content">
+            <h2>Early Web History</h2>
+            <!-- Diagram showing Tim Berners-Lee's original 1989 proposal -->
+            <img src="early_web.png" alt="Early Web 1991" class="content-img zoomable">
+
+            <!-- Milestone 3 update: added subheadings to match the Modern Web Evolution
+                 page's two-section pattern for consistency across the site -->
+            <h3>The Original Proposal</h3>
+            <p>The diagram shown here is Tim Berners-Lee's original 1989 proposal at CERN, titled "Information Management: A Proposal." It maps out how his idea for the Web grew out of earlier systems he had worked on, like ENQUIRE, and broader concepts of "hypertext" and "hypermedia," meaning documents that link to other documents rather than sitting in a rigid, top-down file structure. Berners-Lee described this as a "mesh" of linked information that would let researchers at CERN navigate between related documents freely, which became the foundational idea behind the Web and, soon after, HTTP itself.</p>
+
+            <h3>From HTTP/0.9 to HTTP/1.1</h3>
+            <!-- Section 1: HTTP/0.9, first version -->
+            <p>Created in 1991 by Sir Tim Berners-Lee, HTTP/0.9 was the initial protocol iteration, designed solely for academics to share text-based research papers. It was highly rudimentary, supporting only the GET method, and lacked headers or status codes.</p>
+
+            <!-- Section 2: HTTP/1.0 adds headers -->
+            <p>By the mid-1990s, HTTP/1.0 was formalized to support graphical interfaces and metadata through headers and MIME types. However, it suffered from a performance flaw: every asset required a new TCP connection, creating significant latency due to the connection handshake.</p>
+
+            <!-- Section 3: HTTP/1.1 fixes connection problem -->
+            <p>To resolve this, HTTP/1.1 was introduced in 1997, utilizing persistent connections via the keep-alive header, which allowed a single TCP connection to serve multiple requests. This version also introduced chunked transfer encoding and robust caching.</p>
+
+            <p>These early growing pains, like the lack of persistent connections and the absence of any real performance optimization, are exactly what later versions of HTTP were built to solve. The next page, Modern Web Evolution, picks up this story with HTTP/2 and HTTP/3.</p>
+        </main>
+        <footer class="footer-section">
+            <p>Class project: <a href="https://ksuweb.github.io/IT3203/" style="color:white;">IT 3203 Course Website</a></p>
+        </footer>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
